@@ -10,6 +10,10 @@
     <header>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
+      <div id="auth" class="auth-controls">
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" class="hidden">Logout</button>
+      </div>
     </header>
 
     <main>
@@ -40,6 +44,21 @@
         <div id="message" class="hidden"></div>
       </section>
     </main>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+      <form id="login-form" class="modal-content">
+        <h4>Teacher Login</h4>
+        <label for="username">Username</label>
+        <input type="text" id="username" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+        <div style="margin-top:10px">
+          <button type="submit">Login</button>
+          <button type="button" id="close-login">Cancel</button>
+        </div>
+      </form>
+    </div>
 
     <footer>
       <p>&copy; 2023 Mergington High School</p>
